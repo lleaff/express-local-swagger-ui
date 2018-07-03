@@ -1,33 +1,38 @@
 {
-  "name": "express-local-swagger-ui",
+  "name": "express-swagger-ui-router",
   "description": "Serve swagger-ui and a local configuration file with express.js (without hacking `node_modules/swagger-ui/dist/index.html`)",
   "version": "2.0.0",
-  "homepage": "https://github.com/lleaff/express-local-swagger-ui",
+  "homepage": "https://github.com/lleaff/express-swagger-ui-router",
   "author": "lleaff <lleaff@outlook.com>",
-  "repository": "lleaff/express-local-swagger-ui",
+  "repository": "lleaff/express-swagger-ui-router",
   "bugs": {
-    "url": "https://github.com/lleaff/express-local-swagger-ui/issues"
+    "url": "https://github.com/lleaff/express-swagger-ui-router/issues"
   },
   "license": "MIT",
   "files": [
-    "index.js"
+    "dist/"
   ],
-  "main": "index.js",
+  "typings": "dist/types/index.d.ts",
+  "main": "dist/lib/index.js",
   "engines": {
     "node": ">=0.10.0"
   },
   "scripts": {
+    "start": "npm run build -- --watch",
+    "build": "tsc --module commonjs",
+    "prepare": "npm run build",
     "test": "mocha"
-  },
-  "dependencies": {
   },
   "peerDependencies": {
     "express": "*",
-    "swagger-ui": ">=2.1.4"
+    "swagger-ui": ">=3.0.0"
   },
   "devDependencies": {
+    "@types/express": "^4.16.0",
+    "@types/node": "^10.5.1",
     "mocha": "*",
-    "should": "*"
+    "should": "*",
+    "typescript": "^2.9.2"
   },
   "keywords": [
     "swagger",
