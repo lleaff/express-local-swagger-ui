@@ -1,7 +1,7 @@
 {
   "name": "express-swagger-ui-router",
   "description": "Serve swagger-ui and a local configuration file with express.js (without hacking `node_modules/swagger-ui/dist/index.html`)",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "homepage": "https://github.com/lleaff/express-swagger-ui-router",
   "author": "lleaff <lleaff@outlook.com>",
   "repository": "lleaff/express-swagger-ui-router",
