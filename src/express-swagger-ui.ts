@@ -5,11 +5,11 @@
  * Licensed under the MIT License.
  */
 import express = require('express');
-import fs from 'fs';
+import fs = require('fs');
 import {
   getAbsoluteFSPath as getAbsoluteSwaggerUiFSPath,
 } from 'swagger-ui-dist';
-import path from 'path';
+import path = require('path');
 
 
 export default function initializeExpressUi({

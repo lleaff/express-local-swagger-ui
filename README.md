@@ -1,7 +1,5 @@
 # express-swagger-ui-router [![NPM version](https://badge.fury.io/js/express-swagger-ui-router.svg)](http://badge.fury.io/js/express-swagger-ui-router)
 
-# express-swagger-ui-router
-
 Automatically expose the given local [openapi](https://github.com/OAI/OpenAPI-Specification/tree/master/examples/v3.0) configuration file for consumption by `swagger-ui`.
 
 ## Installation
