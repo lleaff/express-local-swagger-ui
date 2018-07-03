@@ -1,12 +1,12 @@
 {
-  "name": "express-swagger-ui",
-  "description": "Serve swagger-ui with express.js (without hacking `node_modules/swagger-ui/dist/index.html`)",
-  "version": "0.1.0",
-  "homepage": "https://github.com/AndreasPizsa/express-swagger-ui",
-  "author": "Andreas Pizsa (https://github.com/AndreasPizsa)",
-  "repository": "AndreasPizsa/express-swagger-ui",
+  "name": "express-local-swagger-ui",
+  "description": "Serve swagger-ui and a local configuration file with express.js (without hacking `node_modules/swagger-ui/dist/index.html`)",
+  "version": "2.0.0",
+  "homepage": "https://github.com/lleaff/express-local-swagger-ui",
+  "author": "lleaff <lleaff@outlook.com>",
+  "repository": "lleaff/express-local-swagger-ui",
   "bugs": {
-    "url": "https://github.com/AndreasPizsa/express-swagger-ui/issues"
+    "url": "https://github.com/lleaff/express-local-swagger-ui/issues"
   },
   "license": "MIT",
   "files": [
@@ -20,10 +20,10 @@
     "test": "mocha"
   },
   "dependencies": {
-    "swagger-ui": "^2.1.4"
   },
   "peerDependencies": {
-    "express": "*"
+    "express": "*",
+    "swagger-ui": ">=2.1.4"
   },
   "devDependencies": {
     "mocha": "*",
