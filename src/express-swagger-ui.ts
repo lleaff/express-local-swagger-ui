@@ -34,7 +34,7 @@ export default function initializeExpressUi({
   if(!html) {
     html = fs
       .readFileSync(path.join(swaggerUiPath,'index.html'),{encoding:'utf-8'})
-      .replace('http://petstore.swagger.io/v2/swagger.json', swaggerUrl)
+      .replace(/https?:\/\/petstore\.swagger\.io(\/.*)*\/\w+.json/, swaggerUrl)
       .replace('</title>', '</title><base href="' + localPath + '/">');
 
     // Set validatorUrl to null or string if set
